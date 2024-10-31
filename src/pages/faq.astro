@@ -1,0 +1,162 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="FAQ - Titanium Eye Glasses Frame Questions Answered">
+	<main>
+		<h1>Frequently Asked Questions</h1>
+
+		<section class="faq-content">
+			<div class="faq-grid">
+				<details>
+					<summary>Are titanium eye glasses frames worth the money?</summary>
+					<div class="answer">
+						<p>
+							Yes, if you wear glasses daily. They last longer, need fewer repairs, and are more comfortable.
+							The higher upfront cost usually pays off within 2 years compared to cheaper materials.
+						</p>
+					</div>
+				</details>
+
+				<details>
+					<summary>Can titanium frames bend?</summary>
+					<div class="answer">
+						<p>
+							Yes, titanium frames can bend and flex. That's actually good - it makes them more durable.
+							They're less likely to snap and can often be bent back into shape if twisted.
+						</p>
+					</div>
+				</details>
+
+				<details>
+					<summary>How long do titanium frames last?</summary>
+					<div class="answer">
+						<p>
+							With proper care, titanium eye glasses frames typically last 4-5 years or more.
+							Many users report their frames still looking new after 3+ years of daily wear.
+						</p>
+					</div>
+				</details>
+
+				<details>
+					<summary>Are all titanium frames the same?</summary>
+					<div class="answer">
+						<p>
+							No. There are different grades:
+						</p>
+						<ul>
+							<li>Pure titanium: Most expensive, lightest</li>
+							<li>Beta titanium: More flexible, slightly heavier</li>
+							<li>Titanium alloy: Varies by mixture</li>
+						</ul>
+					</div>
+				</details>
+
+				<details>
+					<summary>Can titanium frames rust?</summary>
+					<div class="answer">
+						<p>
+							No, titanium doesn't rust. It's completely corrosion-resistant.
+							This makes it great for people who sweat a lot or live in humid areas.
+						</p>
+					</div>
+				</details>
+
+				<details>
+					<summary>How do I clean titanium frames?</summary>
+					<div class="answer">
+						<p>
+							Simple process:
+						</p>
+						<ul>
+							<li>Lukewarm water</li>
+							<li>Mild soap (dish soap works)</li>
+							<li>Soft microfiber cloth</li>
+							<li>Avoid harsh chemicals</li>
+						</ul>
+					</div>
+				</details>
+			</div>
+		</section>
+	</main>
+</Layout>
+
+<style>
+	main {
+		max-width: 800px;
+		margin: 0 auto;
+		padding: 2rem;
+	}
+
+	h1 {
+		color: #2c3e50;
+		font-size: 2.5rem;
+		margin-bottom: 2rem;
+		text-align: center;
+	}
+
+	.faq-content {
+		background: white;
+		padding: 2rem;
+		border-radius: 8px;
+		box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+	}
+
+	.faq-grid {
+		display: grid;
+		gap: 1rem;
+	}
+
+	details {
+		border: 1px solid #e9ecef;
+		border-radius: 4px;
+		padding: 1rem;
+		margin-bottom: 1rem;
+	}
+
+	summary {
+		cursor: pointer;
+		font-weight: 600;
+		color: #2c3e50;
+		padding: 0.5rem;
+	}
+
+	summary:hover {
+		color: #34495e;
+	}
+
+	.answer {
+		padding: 1rem;
+		padding-bottom: 0;
+	}
+
+	p {
+		margin-bottom: 1rem;
+		line-height: 1.6;
+	}
+
+	ul {
+		list-style-type: none;
+		padding: 0;
+		margin: 1rem 0;
+	}
+
+	li {
+		margin-bottom: 0.5rem;
+		padding-left: 1.5rem;
+		position: relative;
+	}
+
+	li:before {
+		content: "•";
+		position: absolute;
+		left: 0;
+		color: #2c3e50;
+	}
+
+	@media (max-width: 600px) {
+		.faq-content {
+			padding: 1rem;
+		}
+	}
+</style>

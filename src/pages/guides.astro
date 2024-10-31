@@ -1,0 +1,137 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Titanium Eye Glasses Frame Guides - Expert Tips">
+	<main>
+		<h1>Titanium Frame Guides</h1>
+		
+		<section class="guides-grid">
+			<article class="guide-card">
+				<h2>Buying Guide</h2>
+				<div class="content">
+					<h3>What to Check</h3>
+					<ul>
+						<li>Weight: Should feel nearly weightless</li>
+						<li>Hinges: Look for integrated flex</li>
+						<li>Finish: Matte or polished</li>
+						<li>Bridge fit: Must sit right</li>
+					</ul>
+
+					<h3>Price Range Guide</h3>
+					<ul>
+						<li>Budget: £150-200</li>
+						<li>Mid-range: £200-300</li>
+						<li>Premium: £300+</li>
+					</ul>
+				</div>
+			</article>
+
+			<article class="guide-card">
+				<h2>Care Guide</h2>
+				<div class="content">
+					<h3>Daily Care</h3>
+					<ul>
+						<li>Clean with mild soap</li>
+						<li>Use microfiber cloth</li>
+						<li>Avoid harsh chemicals</li>
+					</ul>
+
+					<h3>Common Issues</h3>
+					<ul>
+						<li>Loose screws: Easy fix</li>
+						<li>Bent arms: Can reshape</li>
+						<li>Nose pad adjustment: Simple</li>
+					</ul>
+				</div>
+			</article>
+
+			<article class="guide-card">
+				<h2>Fitting Guide</h2>
+				<div class="content">
+					<h3>Perfect Fit Signs</h3>
+					<ul>
+						<li>No pressure points</li>
+						<li>Level on face</li>
+						<li>Right temple length</li>
+					</ul>
+
+					<h3>Adjustments</h3>
+					<ul>
+						<li>Bridge width</li>
+						<li>Temple angle</li>
+						<li>Nose pad position</li>
+					</ul>
+				</div>
+			</article>
+		</section>
+	</main>
+</Layout>
+
+<style>
+	main {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 2rem;
+	}
+
+	h1 {
+		color: #2c3e50;
+		font-size: 2.5rem;
+		margin-bottom: 2rem;
+		text-align: center;
+	}
+
+	.guides-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 2rem;
+	}
+
+	.guide-card {
+		background: white;
+		padding: 2rem;
+		border-radius: 8px;
+		box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+	}
+
+	h2 {
+		color: #2c3e50;
+		margin-bottom: 1.5rem;
+		font-size: 1.5rem;
+	}
+
+	h3 {
+		color: #2c3e50;
+		margin: 1.5rem 0 1rem;
+		font-size: 1.2rem;
+	}
+
+	ul {
+		list-style-type: none;
+		padding: 0;
+	}
+
+	li {
+		margin-bottom: 0.5rem;
+		padding-left: 1.5rem;
+		position: relative;
+	}
+
+	li:before {
+		content: "•";
+		position: absolute;
+		left: 0;
+		color: #2c3e50;
+	}
+
+	.content {
+		margin-top: 1rem;
+	}
+
+	@media (max-width: 768px) {
+		.guides-grid {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>
